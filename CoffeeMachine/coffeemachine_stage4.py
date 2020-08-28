@@ -5,7 +5,7 @@ coffee_beans = 120
 dis_cups = 9
 
 
-def accounting():
+def detail():
     print(f"""
 The coffee machine has:
 {water} of water
@@ -51,7 +51,7 @@ def take():
     money -= money
 
 
-accounting()
+detail()
 command = input('Write action (buy, fill, take):')
 if command == 'buy':
     buy()
@@ -59,4 +59,4 @@ elif command == 'fill':
     fill()
 elif command == 'take':
     take()
-accounting()
+detail()
